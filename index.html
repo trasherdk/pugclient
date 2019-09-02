@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+	<head>
+		<meta charset="utf-8">
+		<title>PUG Template Tester</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="https://unpkg.com/codeflask/build/codeflask.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-pug.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-css.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-css-extras.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-scss.js"></script>
+		
+		<script src="https://pugjs.org/js/pug.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		
+		<link rel="stylesheet" href="app.css">
+		
+		<script src="editors.js"></script>
+		<script src="app.js"></script>
+
+	</head>
+	<body>
+		<h2>Pug Tester</h2>
+
+		<div class="masonry">
+			<div class="column">
+				<div class="pugcode">
+					<h3 id="pugheader">PUG Template <button id="render">Render</button></h3>
+					<div class="pugedit" id="pugedit"></div>
+					<div id="pugError" class="error"></div>
+				</div>
+				
+			</div>
+			
+			<div class="column">
+				<div class="jsondata">
+					<h3 id="jsonheader">JSON Data for Template</h3>
+					<div class="jsoninput" id="jsoninput"></div>
+					<div id="jsonError" class="error"></div>
+				</div>
+
+				<div class="cssdata">
+					<h3 id="cssheader">CSS for Template</h3>
+					<div class="cssinput" id="cssinput"></div>
+					<div id="cssError" class="error"></div>
+				</div>
+			</div>
+		</div>
+		<div class="result" id="result"></div>
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', init, false);
+		</script>
+	</body>
+</html> 

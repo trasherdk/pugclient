@@ -1,0 +1,26 @@
+{
+  "user": {
+    "name": "TrasherDK",
+    "options": {"A": "Alpha","B": "Bravo","C": "Charlie","D": "Delta"}
+  },
+  "trades": [
+    {
+      "transaction": 1,
+      "dst_currency": "XMR",
+      "dst_value": 2,
+      "src_price": null,
+      "src_value": 115.7,
+      "src_currency": "EUR",
+      "date": "29 May, 1958"
+    },
+    {
+      "transaction": 2,
+      "dst_currency": "EUR",
+      "dst_value": 115.7,
+      "src_price": null,
+      "src_value": 2,
+      "src_currency": "XMR",
+      "date": "29 May, 1958"
+    }
+  ]
+}

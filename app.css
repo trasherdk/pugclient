@@ -1,0 +1,95 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.masonry {
+	display: flex;
+	flex-direction: column;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+}
+
+@media only screen and (min-width: 500px) {
+	.masonry {
+		flex-direction: row;
+	}
+	.column {
+		width: calc(100%/2);
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+textarea {
+	width: 500px;
+	height: 200px;
+}
+
+.pugcode {
+	float:left;
+	margin-left: 20px;
+	margin-right:20px;
+	width: 95%;
+}
+
+.pugedit {
+	position: relative;
+	width: 800px;
+	height: 600px;
+}
+
+.jsondata, .cssdata {
+	float:left;
+	width: 95%;
+//	background: LightGray;
+	margin: 2px;
+	padding: 5px;
+}
+
+.jsoninput {
+	position: relative;
+	width: 800px;
+	height: 300px;
+#	white-space: pre;
+}
+
+.cssinput {
+	position: relative;
+	width: 800px;
+	height: 300px;
+#	white-space: pre;
+}
+
+.result {
+	all: initial;
+	clear: both;
+	float: left;
+/*    
+	width: 94%;
+	min-height: 40%;
+*/
+	margin-top: 10px;
+/*
+	margin-left: auto;
+	margin-right: 0;
+*/
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.error {
+	font-family: 'Source Code Pro', monospace;
+	color: red;
+	white-space: pre;
+}

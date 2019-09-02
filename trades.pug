@@ -1,0 +1,32 @@
+table
+  thead
+    tr
+      th Currency
+      th Quantity
+      th Price
+      th Total
+      th Date
+  tbody
+    each trade in trades
+      tr
+        td.align-left #{trade.dst_currency}
+        td.align-right #{trade.dst_value}
+        if (trade.dst_currency === "EUR")
+          td.align-middle #{trade.dst_value / trade.src_value}
+        else
+          td.align-middle #{trade.src_value / trade.dst_value}
+        td.align-middle #{trade.src_value} #{trade.src_currency}
+        td.align-middle #{trade.date}
+
+#select Select something &nbsp;
+  select
+    each option in user.options
+      option(option.id) #{option}
+    
+- var name= "Bob"
+if user.name === name
+  h3 Hello #{name}
+else
+  h3 My name is #{user.name}
+
+p.cpyr Copyright &copy; #{ new Date().getFullYear()} #{user.name}

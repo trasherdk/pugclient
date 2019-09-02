@@ -1,0 +1,23 @@
+thead th {
+  min-width: 10vw;
+}
+thead > tr {
+  background: gray;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-middle {
+  text-align: center;
+}
+tbody > tr {
+  background: lightgray;
+}
+.cpyr {
+  padding: 0.5em;
+  background: black;
+  color: white;
+}
