@@ -3,6 +3,8 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -59,7 +61,7 @@ textarea {
 .jsondata, .cssdata {
 	float:left;
 	width: 95%;
-//	background: LightGray;
+/*	background: LightGray; */
 	margin: 2px;
 	padding: 5px;
 }
@@ -68,14 +70,14 @@ textarea {
 	position: relative;
 	width: 800px;
 	height: 300px;
-#	white-space: pre;
+/*	white-space: pre; */
 }
 
 .cssinput {
 	position: relative;
 	width: 800px;
 	height: 300px;
-#	white-space: pre;
+/*	white-space: pre; */
 }
 
 .result {
