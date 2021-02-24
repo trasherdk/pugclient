@@ -10,7 +10,8 @@ function init() {
 	$jsonError = document.getElementById('jsonError');
 	$pugError = document.getElementById('pugError');
 	$cssError = document.getElementById('cssError');
-	$btn = document.getElementById('render');
+	$btn1 = document.getElementById('render1');
+	$btn2 = document.getElementById('render2');
 	
 	pug = require('pug');
 /*
@@ -18,7 +19,8 @@ function init() {
 	$data.addEventListener('input', doRender, false);
 	$css.addEventListener('input', doRender, false);
 */
-	$btn.addEventListener('click', doRender, false);
+	$btn1.addEventListener('click', doRender, false);
+	$btn2.addEventListener('click', doRender, false);
 /*    
 	$data.value = request('http://pugclient.fumlersoft.dk/trades.json');
 	$css.value = require('http://pugclient.fumlersoft.dk/trades.css');
@@ -40,7 +42,7 @@ function init() {
 	
 	console.log('Ready');
 	doRender();
-};
+}
 
 function getFile(url, el) {
 	fetch(url).then(function(response) {
